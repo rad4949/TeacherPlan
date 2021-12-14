@@ -1,0 +1,280 @@
+﻿@{
+    ViewData["Title"] = "Manager panel";
+    Layout = "~/Views/Shared/_ManagerLayout.cshtml";
+}
+@model Plan.ViewModels.AllUserViewModel
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet">
+
+<link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+<link href="~/css/Style.css" rel="stylesheet">
+<link href="~/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .btn-success1 {
+        width: 100%;
+        background-color: lawngreen;
+        color: #ffffff;
+    }
+
+        .btn-success1:hover {
+            width: 100%;
+            background-color: lightslategray;
+        }
+
+    .btn-warning1 {
+        width: 100%;
+        /*  background: #4e73df;*/
+        color: white;
+    }
+
+        .btn-warning1:hover {
+            width: 100%;
+            /* background-color: lightslategray;*/
+        }
+
+    .container1 {
+        display: flex;
+    }
+
+        .container1.space-around {
+            justify-content: space-around;
+        }
+
+    .padin {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .marg {
+        margin-left: -8px;
+    }
+
+    colorMenu {
+        background: #4066d4;
+    }
+
+    button {
+        border: 0px;
+        background: #4066d4;       
+    }
+
+    .sizeText {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11pt;
+    }
+
+    .sizeInput {
+        width: 100%;
+    }
+
+    .testbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        padding: 3px;
+    }
+
+    input, select, textarea {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+        input:hover, select:hover, textarea:hover {
+            outline: none;
+            border: 1px solid #095484;
+        }
+
+    input {
+        width: calc(100% - 0px);
+        padding: 5px;
+    }
+
+    .colorBtn {
+        width: 100%;
+    }
+
+
+
+    .btn-primary {
+        width: 100%;
+        color: var(--button-color);
+        background: #4e73df;
+        border-radius: var(--border-radius);
+        color: #ffffff;
+    }
+
+        .btn-primary:hover {
+            box-shadow: inset 0 0 0 20rem var(--darken-1);
+        }
+
+    .tableSize {
+        table-layout: fixed; /* Фиксированная ширина ячеек */
+        width: 100%; /* Ширина таблицы */
+    }
+
+    .verticalText {
+        display: inline-block;
+        font-size: 15px;
+        writing-mode: vertical-lr;
+        -ms-writing-mode: bt-lr;
+        transform-origin: center;
+        transform: rotate(180deg);
+        padding-top: 2mm;
+        padding-bottom: 3mm;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+</style>
+
+<div class="col-md-6 offset-md-3">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Виберіть пункт індивідуального плану викладача</h6>
+        </div>
+        <div class="card-body">
+
+            <ul class=" navbar-nav bg-gradient-primary  sidebar-dark accordion sizeInput">
+                <div class="padin colorMenu">
+                    <li class="nav-item colorMenu">
+                        <a class="nav-link collapsible dropdown">
+                            <span> Характеристика груп</span>
+                        </a>
+                        <div class="content animated--fade-in">
+                            <form asp-controller="Manager" asp-action="CharacteristicGroupsTable1Manager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Переглянути I-семестр</button>
+                            </form>
+                            <form asp-controller="Manager" asp-action="CharacteristicGroupsTable2Manager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Переглянути II-семестр</button>
+                            </form>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="padin colorMenu">
+                    <li class="nav-item colorMenu">
+                        <a class="nav-link collapsible dropdown">
+                            <span>Аудиторні заняття</span>
+                        </a>
+                        <div class="content animated--fade-in">
+                            <form asp-controller="Manager" asp-action="LectureClassesTable1Manager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Переглянути I-семестр</button>
+                            </form>
+                            <form asp-controller="Manager" asp-action="LectureClassesTable2Manager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Переглянути II-семестр</button>
+                            </form>
+                            <form asp-controller="Manager" asp-action="LectureClassesTableSumManager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Разом годин за рік</button>
+                            </form>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="padin colorMenu">
+                    <li class="nav-item colorMenu">
+                        <a class="nav-link collapsible dropdown">
+                            <span>Контрольні заходи</span>
+                        </a>
+                        <div class="content animated--fade-in">
+                            <form asp-controller="Manager" asp-action="ControlMeasuresTable1Manager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Переглянути I-семестр</button>
+                            </form>
+                            <form asp-controller="Manager" asp-action="ControlMeasuresTable2Manager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Переглянути II-семестр</button>
+                            </form>
+                            <form asp-controller="Manager" asp-action="ControlMeasuresSumManager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Разом годин за рік</button>
+                            </form>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="padin colorMenu">
+                    <li class="nav-item colorMenu">
+                        <a class="nav-link collapsible dropdown">
+                            <span>Інші види</span>
+                        </a>
+                        <div class="content animated--fade-in">
+                            <form asp-controller="Manager" asp-action="OtherTypesWorkTable1Manager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Переглянути I-семестр</button>
+                            </form>
+                            <form asp-controller="Manager" asp-action="OtherTypesWorkTable2Manager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Переглянути II-семестр</button>
+                            </form>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="padin colorMenu">
+                    <li class="nav-item colorMenu">
+                        <a class="nav-link collapsible dropdown">
+                            <span>Таблиці з відміткою про виконання</span>
+                        </a>
+                        <div class="content animated--fade-in">
+                            <form asp-controller="Manager" asp-action="WorkloadSumManager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Навантаження (годин)</button>
+                            </form>
+                            <form asp-controller="Manager" asp-action="MethodicalWorkTableManager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Методична робота</button>
+                            </form>
+                            <form asp-controller="Manager" asp-action="ScientificWorkTableManager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Наукова робота</button>
+                            </form>
+                            <form asp-controller="Manager" asp-action="OrganizationalWorkTableManager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Організаційна робота</button>
+                            </form>
+                            <form asp-controller="Manager" asp-action="EducationalActivitiesTableManager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Виховна робота</button>
+                            </form>
+                            <form asp-controller="Manager" asp-action="ChangesWorkPlanTableManager" method="get">
+                                <input type="hidden" name="Id" value="@Model.Id" />
+                                <button class="dropdown-item">Зміна у плані</button>
+                            </form>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="~/vendor/jquery/jquery.min.js"></script>
+<script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="~/js/sb-admin-2.min.js"></script>
+<script src="~/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="~/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="~/js/demo/datatables-demo.js"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

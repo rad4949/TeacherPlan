@@ -1,0 +1,170 @@
+﻿@{
+    ViewData["Title"] = "Teacher panel";
+    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+}
+
+@model Plan.ViewModels.ListNameSubjectViewModel
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet">
+
+<link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+<link href="~/css/Style.css" rel="stylesheet">
+<link href="~/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .active:after {
+        content: none;
+    }
+
+    .sizeText {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11pt;
+    }
+
+    .sizeTextSmall {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+    }
+
+    .colorBtn {
+        background: #4e73df;
+    }
+
+    .btn-primary {
+        width: 100%;
+        color: var(--button-color);
+        background-color: var(--button-background-color);
+        border-radius: var(--border-radius);
+        color: #ffffff;
+    }
+
+        .btn-primary:hover {
+            width: 100%;
+            box-shadow: inset 0 0 0 20rem var(--darken-1);
+        }
+
+    .btn-success1 {
+        width: 100%;
+        background-color: lawngreen;
+        color: #ffffff;
+    }
+
+        .btn-success1:hover {
+            width: 100%;
+            background-color: lightslategray;
+        }
+
+    .btn-warning1 {
+        width: 100%;
+        background: #4e73df;
+        color: white;
+    }
+
+        .btn-warning1:hover {
+            width: 100%;
+            background-color: lightslategray;
+        }
+
+    .tableSize {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+
+
+    .verticalText {
+        margin-left: -8px;
+        display: inline-block;
+        font-size: 15px;
+        writing-mode: vertical-lr;
+        -ms-writing-mode: bt-lr;
+        transform-origin: center;
+        transform: rotate(180deg);
+        padding-top: 2mm;
+        padding-bottom: 3mm;
+    }
+
+    button {
+        border: 0px;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+</style>
+
+@await Html.PartialAsync("SearchData", Model.Filter)
+
+<div class="card shadow mb-4">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="tableSize table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid"
+                       aria-describedby="dataTable_info" style="width: 100%;">
+
+                    <tr>
+                        <th colspan="2" rowspan="2">№</th>
+                        <th colspan="8" rowspan="1">Назва навчальних дисциплін</th>
+                        <th colspan="4" rowspan="1"></th>
+                    </tr>
+                    <tbody>
+                        @foreach (var item in Model.listNameSubject)
+                        {
+                            <tr role="row" class="odd">
+                                <td colspan="2">@(Model.listNameSubject.IndexOf(item) + 1)</td>
+                                <td colspan="8">@item.NameSubjects</td>
+                                <td colspan="4">
+                                    <form asp-controller="Teacher" asp-action="SetControlMeasuresTable1" method="get">
+                                        <input type="hidden" value="@item.Id" name="id" />
+                                        <button class="btn-warning1">
+                                            <span class="btn-text">Заповнити дисципліну</span>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <nav>
+            <ul class="pagination">
+                @{int page = Model.Page; }
+                <li class="page-item @(page == 1? "disabled":"")">
+                    <a class="page-link" asp-action="NameSubjectControlMeasures1" asp-controller="Teacher"
+                       asp-route-page="@(page - 1)" asp-route-name="@Model.Filter.Name" tabindex="-1">Попередня</a>
+                </li>
+                @for (int i = 1; i < Model.MaxPage + 1; i++)
+                {
+                    <li class="page-item @(page == i ? "active": "" )">
+                        <a class="page-link" asp-action="NameSubjectControlMeasures1" asp-controller="Teacher"
+                           asp-route-page="@i" asp-route-name="@Model.Filter.Name">@i <span class="sr-only">(current)</span></a>
+                    </li>
+                }
+                <li class="page-item @(page == Model.MaxPage? "disabled":"")">
+                    <a class="page-link" asp-action="NameSubjectControlMeasures1" asp-controller="Teacher" asp-route-page="@(page+1)"
+                       asp-route-name="@Model.Filter.Name">Наступна</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script src="~/vendor/jquery/jquery.min.js"></script>
+<script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="~/js/sb-admin-2.min.js"></script>
+<script src="~/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="~/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="~/js/demo/datatables-demo.js"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

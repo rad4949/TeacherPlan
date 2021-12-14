@@ -1,0 +1,153 @@
+﻿@{
+    ViewData["Title"] = "Teacher panel";
+    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+}
+
+@model Plan.ViewModels.WorkloadSumViewModel
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet">
+
+<link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+<link href="~/css/Style.css" rel="stylesheet">
+<link href="~/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .sizeText {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11pt;
+    }
+
+    .sizeTextSmall {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+    }
+
+    .colorBtn {
+        background: #4e73df;
+    }
+
+    .btn-primary {
+        width: 100%;
+        color: var(--button-color);
+        background-color: var(--button-background-color);
+        border-radius: var(--border-radius);
+        color: #ffffff;
+    }
+
+        .btn-primary:hover {
+            width: 100%;
+            box-shadow: inset 0 0 0 20rem var(--darken-1);
+        }
+
+    .tableSize {
+        table-layout: fixed; /* Фиксированная ширина ячеек */
+        width: 100%; /* Ширина таблицы */
+    }
+
+    .verticalText {
+        margin-left: -8px;
+        display: inline-block;
+        font-size: 15px;
+        writing-mode: vertical-lr;
+        -ms-writing-mode: bt-lr;
+        transform-origin: center;
+        transform: rotate(180deg);
+        padding-top: 2mm;
+        padding-bottom: 3mm;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+</style>
+
+<div class="card shadow mb-4">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="tableSize table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid"
+                       aria-describedby="dataTable_info" style="width: 100%;">
+
+                    <tr>
+                        <th colspan="3" rowspan="5">Термін виконання</th>
+                        <th colspan="12" rowspan="1">Разом навчальне навантаження (годин)</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="4">1. Викладання навчальних дисциплін</th>
+                        <th colspan="4">2. Інші види навчальної роботи</th>
+                        <th colspan="4">Всього годин</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2" rowspan="1">За бюджет.</th>
+                        <th colspan="2" rowspan="1">За контр.</th>
+                        <th colspan="2" rowspan="1">За бюджет.</th>
+                        <th colspan="2" rowspan="1">За контр.</th>
+                        <th colspan="2" rowspan="1">За бюджет.</th>
+                        <th colspan="2" rowspan="1">За контр.</th>
+                    </tr>
+                    <tr>
+                        <th colspan="1">пл</th>
+                        <th colspan="1">вик</th>
+                        <th colspan="1">пл</th>
+                        <th colspan="1">вик</th>
+
+                        <th colspan="1">пл</th>
+                        <th colspan="1">вик</th>
+                        <th colspan="1">пл</th>
+                        <th colspan="1">вик</th>
+
+                        <th colspan="1">пл</th>
+                        <th colspan="1">вик</th>
+                        <th colspan="1">пл</th>
+                        <th colspan="1">вик</th>
+                    </tr>
+                    <tbody>
+                        @foreach (var item in Model.listWorkloadSum)
+                        {
+                            <tr role="row" class="odd">
+                                <td colspan="3">@item.NameWorkloadSum</td>
+
+                                <td colspan="1">@item.TeachingBudPl</td>
+                                <td colspan="1">@item.TeachingBudVuc</td>
+                                <td colspan="1">@item.TeachingConPl</td>
+                                <td colspan="1">@item.TeachingConVuc</td>
+
+                                <td colspan="1">@item.OtherBudPl</td>
+                                <td colspan="1">@item.OtherBudVuc</td>
+                                <td colspan="1">@item.OtherConPl</td>
+                                <td colspan="1">@item.OtherConVuc</td>
+
+                                <td colspan="1">@item.AllBudPl</td>
+                                <td colspan="1">@item.AllBudVuc</td>
+                                <td colspan="1">@item.AllConPl</td>
+                                <td colspan="1">@item.AllConVuc</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/vendor/jquery/jquery.min.js"></script>
+<script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="~/js/sb-admin-2.min.js"></script>
+<script src="~/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="~/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="~/js/demo/datatables-demo.js"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

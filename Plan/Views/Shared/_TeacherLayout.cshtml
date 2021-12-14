@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @*<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">*@
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Teacher</title>
+
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/sb-admin-2.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <style>
+        .leftLocation {
+            right: 0;
+            margin-right: 20px;
+            position: absolute;
+        }
+        .collapsible {
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 14px;
+        }
+
+            .active, .collapsible:hover {
+                background: #4e73df;
+            }
+
+            .collapsible:after {
+                content: '\002B';
+                color: rgba(255,255,255,.8);
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: white;
+            font-size: 13px;
+        }
+
+        .sizeText {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+        }
+
+        .colorBtn {
+            width: 100%;
+            background: #4e73df;
+        }
+
+        .divBarSize {
+            width: 100%;
+            background: #4e73df;
+        }
+
+        .btn-primary {
+            width: 100%;
+            color: var(--button-color);
+            background-color: var(--button-background-color);
+            border-radius: var(--border-radius);
+            color: #ffffff;
+        }
+
+            .btn-primary:hover {
+                box-shadow: inset 0 0 0 20rem var(--darken-1);
+            }
+    </style>
+</head>
+
+<body id="page-top">
+
+    <div id="wrapper">
+
+        <ul class=" navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/Teacher/Index">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Teacher</div>
+            </a>
+
+            <hr class="sidebar-divider">
+
+            <li class="nav-item">
+                <a class="nav-link collapsible dropdown">
+                    <span> Характеристика груп</span>
+                </a>
+                <div class="content animated--fade-in">
+                    <a class="dropdown-item" href="/Teacher/CharacteristicGroupsTable1">Переглянути I-семестр</a>
+                    <a class="dropdown-item" href="/Teacher/NameSubjectCharacteristic1">Створити I-семестр</a>
+                    <a class="dropdown-item" href="/Teacher/CharacteristicGroupsTable2">Переглянути II-семестр</a>
+                    <a class="dropdown-item" href="/Teacher/NameSubjectCharacteristic2">Створити II-семестр</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsible dropdown">
+                    <span>Аудиторні заняття</span>
+                </a>
+                <div class="content animated--fade-in">
+                    <a class="dropdown-item" href="/Teacher/LectureClassesTable1">Переглянути I-семестр</a>
+                    <a class="dropdown-item" href="/Teacher/NameSubjectLectureClasses1">Створити I-семестр</a>
+                    <a class="dropdown-item" href="/Teacher/LectureClassesTable2">Переглянути II-семестр</a>
+                    <a class="dropdown-item" href="/Teacher/NameSubjectLectureClasses2">Створити II-семестр</a>
+                    <a class="dropdown-item" href="/Teacher/LectureClassesTableSum">Разом годин за рік</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsible dropdown">
+                    <span>Контрольні заходи</span>
+                </a>
+                <div class="content animated--fade-in">
+                    <a class="dropdown-item" href="/Teacher/ControlMeasuresTable1">Переглянути I-семестр</a>
+                    <a class="dropdown-item" href="/Teacher/NameSubjectControlMeasures1">Створити I-семестр</a>
+                    <a class="dropdown-item" href="/Teacher/ControlMeasuresTable2">Переглянути II-семестр</a>
+                    <a class="dropdown-item" href="/Teacher/NameSubjectControlMeasures2">Створити II-семестр</a>
+                    <a class="dropdown-item" href="/Teacher/ControlMeasuresSum">Разом годин за рік</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsible dropdown">
+                    <span>Інші види</span>
+                </a>
+                <div class="content animated--fade-in">
+                    <a class="dropdown-item" href="/Teacher/OtherTypesWorkTable">Переглянути I-семестр</a>
+                    <a class="dropdown-item" href="/Teacher/OtherTypesWorkSemestr2Table">Переглянути II-семестр</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/Teacher/WorkloadSum">
+                    <span>Навантаження (годин)</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsible dropdown">
+                    <span>Методична робота</span>
+                </a>
+                <div class="content animated--fade-in">
+                    <a class="dropdown-item" href="/Teacher/MethodicalWorkTable">Переглянути</a>
+                    <a class="dropdown-item" asp-controller="Teacher" asp-action="SetMethodicalWorkTable">Створити</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsible dropdown">
+                    <span>Наукова робота</span>
+                </a>
+                <div class="content animated--fade-in">
+                    <a class="dropdown-item" href="/Teacher/ScientificWorkTable">Переглянути</a>
+                    <a class="dropdown-item" href="/Teacher/SetScientificWorkTable">Створити</a>
+                </div>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link collapsible dropdown">
+                    <span>Організаційна робота</span>
+                </a>
+                <div class="content animated--fade-in">
+                    <a class="dropdown-item" href="/Teacher/OrganizationalWorkTable">Переглянути</a>
+                    <a class="dropdown-item" href="/Teacher/SetOrganizationalWorkTable">Створити</a>
+                </div>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link collapsible dropdown">
+                    <span>Виховна робота</span>
+                </a>
+                <div class="content animated--fade-in">
+                    <a class="dropdown-item" href="/Teacher/EducationalActivitiesTable">Переглянути</a>
+                    <a class="dropdown-item" href="/Teacher/SetEducationalActivitiesTable">Створити</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsible dropdown">
+                    <span>Зміна у плані</span>
+                </a>
+                <div class="content animated--fade-in">
+                    <a class="dropdown-item" href="/Teacher/ChangesWorkPlanTable">Переглянути</a>
+                    <a class="dropdown-item" href="/Teacher/SetChangesWorkPlanTable">Створити</a>
+                </div>
+            </li>
+
+        </ul>
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        using (Html.BeginForm("Logout", "Account", FormMethod.Post, new { id = "logoutForm", @class = "form-inline my-2 my-lg-0" }))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <a class="nav navbar-nav ml-auto">Привіт @User.Identity.Name</a>
+
+                            <div class="leftLocation">
+                                <a class="nav navbar-nav ml-auto " asp-controller="Account" asp-action="Login" onclick="document.getElementById('logoutForm').submit();">
+                                    Вихід
+                                </a>
+                            </div>
+                           
+
+                        }
+                    }
+                    else
+                    {
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Вхід</a>
+                            </li>
+                        </ul>
+                    }
+
+                </nav>
+                <div class="container">
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
+                </div>
+            </div>
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/js/sb-admin-2.min.js"></script>
+    <script src="~/vendor/chart.js/Chart.min.js"></script>
+    <script src="~/js/demo/chart-area-demo.js"></script>
+    <script src="~/js/demo/chart-pie-demo.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

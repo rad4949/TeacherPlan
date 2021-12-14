@@ -1,0 +1,434 @@
+﻿@{
+    ViewData["Title"] = "Teacher panel";
+    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+}
+
+@model Plan.ViewModels.ControlMeasuresViewModels
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet">
+
+<link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+<link href="~/css/Style.css" rel="stylesheet">
+<link href="~/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .pos {
+        text-align: center;
+    }
+
+    .sizeText {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11pt;
+    }
+
+    .sizeInput {
+        width: 100%;
+    }
+
+    .testbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        padding: 3px;
+    }
+
+    input, select, textarea {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+        input:hover, select:hover, textarea:hover {
+            outline: none;
+            border: 1px solid #095484;
+        }
+
+    input {
+        width: calc(100% - 0px);
+        padding: 5px;
+    }
+
+    .colorBtn {
+        width: 100%;
+        background: #4e73df;
+    }
+
+    .divBarSize {
+        width: 100%;
+        background: #4e73df;
+    }
+
+    .btn-primary {
+        width: 100%;
+        color: var(--button-color);
+        background: #4e73df;
+        border-radius: var(--border-radius);
+        color: #ffffff;
+    }
+
+        .btn-primary:hover {
+            box-shadow: inset 0 0 0 20rem var(--darken-1);
+        }
+
+    .tableSize {
+        table-layout: fixed; /* Фиксированная ширина ячеек */
+        width: 100%; /* Ширина таблицы */
+    }
+
+    .verticalText {
+        display: inline-block;
+        font-size: 15px;
+        writing-mode: vertical-lr;
+        -ms-writing-mode: bt-lr;
+        transform-origin: center;
+        transform: rotate(180deg);
+        padding-top: 2mm;
+        padding-bottom: 3mm;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+</style>
+
+<div class="col-md-6 offset-md-3">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="pos m-0 font-weight-bold text-primary">Створення контрольних заходів - I семестр</h6>
+            <h6 class="pos m-0 font-weight-bold text-primary">@Model.NameAcademiDisciplines</h6>
+        </div>
+        <div class="card-body">
+            <form method="POST">
+                <input type="hidden" name="NameAcademiDisciplines" value="@Model.NameAcademiDisciplines" />
+
+                <div class="input-group width">
+                    <label asp-for="ExamBudPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="ExamBudPl" class="text-danger"></span>
+                    <input asp-for="ExamBudPl" class="input--style-3" type="number" placeholder="Введіть к-сть екзаменів за бюджетом пл" name="ExamBudPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="ExamBudVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="ExamBudVuc" class="text-danger"></span>
+                    <input asp-for="ExamBudVuc" class="input--style-3" type="number" placeholder="Введіть к-сть екзаменів за бюджетом вик" name="ExamBudVuc">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="ExamConPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="ExamConPl" class="text-danger"></span>
+                    <input asp-for="ExamConPl" class="input--style-3" type="number" placeholder="Введіть к-сть екзаменів за контрактом пл" name="ExamConPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="ExamConVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="ExamConVuc" class="text-danger"></span>
+                    <input asp-for="ExamConVuc" class="input--style-3" type="number" placeholder="Введіть к-сть екзаменів за контрактом вик" name="ExamConVuc">
+                </div>
+
+
+
+                <div class="input-group width">
+                    <label asp-for="TestBudPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="TestBudPl" class="text-danger"></span>
+                    <input asp-for="TestBudPl" class="input--style-3" type="number" placeholder="Введіть к-сть заліків за бюджетом пл" name="TestBudPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="TestBudVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="TestBudVuc" class="text-danger"></span>
+                    <input asp-for="TestBudVuc" class="input--style-3" type="number" placeholder="Введіть к-сть заліків за бюджетом вик" name="TestBudVuc">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="TestConPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="TestConPl" class="text-danger"></span>
+                    <input asp-for="TestConPl" class="input--style-3" type="number" placeholder="Введіть к-сть заліків за контрактом пл" name="TestConPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="TestConVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="TestConVuc" class="text-danger"></span>
+                    <input asp-for="TestConVuc" class="input--style-3" type="number" placeholder="Введіть к-сть заліків за контрактом вик" name="TestConVuc">
+                </div>
+
+
+                <div class="input-group width">
+                    <label asp-for="KRBudPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="KRBudPl" class="text-danger"></span>
+                    <input asp-for="KRBudPl" class="input--style-3" type="number" placeholder="Введіть к-сть контрольних робіт за бюджетом пл" name="KRBudPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="KRBudVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="KRBudVuc" class="text-danger"></span>
+                    <input asp-for="KRBudVuc" class="input--style-3" type="number" placeholder="Введіть к-сть контрольних робіт за бюджетом вик" name="KRBudVuc">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="KRConPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="KRConPl" class="text-danger"></span>
+                    <input asp-for="KRConPl" class="input--style-3" type="number" placeholder="Введіть к-сть контрольних робіт за контрактом пл" name="KRConPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="KRConVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="KRConVuc" class="text-danger"></span>
+                    <input asp-for="KRConVuc" class="input--style-3" type="number" placeholder="Введіть к-сть контрольних робіт за контрактом вик" name="KRConVuc">
+                </div>
+
+
+
+                <div class="input-group width">
+                    <label asp-for="CursProectBudPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="CursProectBudPl" class="text-danger"></span>
+                    <input asp-for="CursProectBudPl" class="input--style-3" type="number" placeholder="Введіть к-сть курсових проектів за бюджетом пл" name="CursProectBudPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="CursProectBudVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="CursProectBudVuc" class="text-danger"></span>
+                    <input asp-for="CursProectBudVuc" class="input--style-3" type="number" placeholder="Введіть к-сть курсових проектів за бюджетом вик" name="CursProectBudVuc">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="CursProectConPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="CursProectConPl" class="text-danger"></span>
+                    <input asp-for="CursProectConPl" class="input--style-3" type="number" placeholder="Введіть к-сть курсових проектів за контрактом пл" name="CursProectConPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="CursProectConVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="CursProectConVuc" class="text-danger"></span>
+                    <input asp-for="CursProectConVuc" class="input--style-3" type="number" placeholder="Введіть к-сть курсових проектів за контрактом вик" name="CursProectConVuc">
+                </div>
+
+
+
+                <div class="input-group width">
+                    <label asp-for="CursRobBudPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="CursRobBudPl" class="text-danger"></span>
+                    <input asp-for="CursRobBudPl" class="input--style-3" type="number" placeholder="Введіть к-сть курсових робіт за бюджетом пл" name="CursRobBudPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="CursRobBudVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="CursRobBudVuc" class="text-danger"></span>
+                    <input asp-for="CursRobBudVuc" class="input--style-3" type="number" placeholder="Введіть к-сть курсових робіт за бюджетом вик" name="CursRobBudVuc">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="CursRobConPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="CursRobConPl" class="text-danger"></span>
+                    <input asp-for="CursRobConPl" class="input--style-3" type="number" placeholder="Введіть к-сть курсових робіт за контрактом пл" name="CursRobConPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="CursRobConVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="CursRobConVuc" class="text-danger"></span>
+                    <input asp-for="CursRobConVuc" class="input--style-3" type="number" placeholder="Введіть к-сть курсових робіт за контрактом вик" name="CursRobConVuc">
+                </div>
+
+
+
+                <div class="input-group width">
+                    <label asp-for="RGRBudPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="RGRBudPl" class="text-danger"></span>
+                    <input asp-for="RGRBudPl" class="input--style-3" type="number" placeholder="Введіть к-сть РГР, РР, ГР за бюджетом пл" name="RGRBudPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="RGRBudVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="RGRBudVuc" class="text-danger"></span>
+                    <input asp-for="RGRBudVuc" class="input--style-3" type="number" placeholder="Введіть к-сть РГР, РР, ГР за бюджетом вик" name="RGRBudVuc">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="RGRConPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="RGRConPl" class="text-danger"></span>
+                    <input asp-for="RGRConPl" class="input--style-3" type="number" placeholder="Введіть к-сть РГР, РР, ГР за контрактом пл" name="RGRConPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="RGRConVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="RGRConVuc" class="text-danger"></span>
+                    <input asp-for="RGRConVuc" class="input--style-3" type="number" placeholder="Введіть к-сть РГР, РР, ГР за контрактом вик" name="RGRConVuc">
+                </div>
+
+
+
+                <div class="input-group width">
+                    <label asp-for="DKRBudPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="DKRBudPl" class="text-danger"></span>
+                    <input asp-for="DKRBudPl" class="input--style-3" type="number" placeholder="Введіть к-сть ДКР за бюджетом пл" name="DKRBudPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="DKRBudVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="DKRBudVuc" class="text-danger"></span>
+                    <input asp-for="DKRBudVuc" class="input--style-3" type="number" placeholder="Введіть к-сть ДКР за бюджетом вик" name="DKRBudVuc">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="DKRConPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="DKRConPl" class="text-danger"></span>
+                    <input asp-for="DKRConPl" class="input--style-3" type="number" placeholder="Введіть к-сть ДКР за контрактом пл" name="DKRConPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="DKRConVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="DKRConVuc" class="text-danger"></span>
+                    <input asp-for="DKRConVuc" class="input--style-3" type="number" placeholder="Введіть к-сть ДКР за контрактом вик" name="DKRConVuc">
+                </div>
+
+
+
+                <div class="input-group width">
+                    <label asp-for="AbstractBudPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="AbstractBudPl" class="text-danger"></span>
+                    <input asp-for="AbstractBudPl" class="input--style-3" type="number" placeholder="Введіть к-сть рефератів за бюджетом пл" name="AbstractBudPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="AbstractBudVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="AbstractBudVuc" class="text-danger"></span>
+                    <input asp-for="AbstractBudVuc" class="input--style-3" type="number" placeholder="Введіть к-сть рефератів за бюджетом вик" name="AbstractBudVuc">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="AbstractConPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="AbstractConPl" class="text-danger"></span>
+                    <input asp-for="AbstractConPl" class="input--style-3" type="number" placeholder="Введіть к-сть рефератів за контрактом пл" name="AbstractConPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="AbstractConVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="AbstractConVuc" class="text-danger"></span>
+                    <input asp-for="AbstractConVuc" class="input--style-3" type="number" placeholder="Введіть к-сть рефератів за контрактом вик" name="AbstractConVuc">
+                </div>
+
+
+
+                <div class="input-group width">
+                    <label asp-for="CosultationBudPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="CosultationBudPl" class="text-danger"></span>
+                    <input asp-for="CosultationBudPl" class="input--style-3" type="number" placeholder="Введіть к-сть консультацій за бюджетом пл" name="CosultationBudPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="CosultationBudVuc"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="CosultationBudVuc" class="text-danger"></span>
+                    <input asp-for="CosultationBudVuc" class="input--style-3" type="number" placeholder="Введіть к-сть консультацій за бюджетом вик" name="CosultationBudVuc">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="CosultationConPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="CosultationConPl" class="text-danger"></span>
+                    <input asp-for="CosultationConPl" class="input--style-3" type="number" placeholder="Введіть к-сть консультацій за контрактом пл" name="CosultationConPl">
+                </div>
+
+                <div class="input-group width">
+                    <label asp-for="CosultationConPl"></label>
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="CosultationConPl" class="text-danger"></span>
+                    <input asp-for="CosultationConPl" class="input--style-3" type="number" placeholder="Введіть к-сть консультацій за контрактом вик" name="CosultationConPl">
+                </div>
+
+                <div>
+                    <button class="sizeText colorBtn btn btn-primary" asp-controller="Teacher" asp-action="SetControlMeasuresTable1" type="submit">Закінчити створення</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="~/vendor/jquery/jquery.min.js"></script>
+<script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="~/js/sb-admin-2.min.js"></script>
+<script src="~/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="~/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="~/js/demo/datatables-demo.js"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

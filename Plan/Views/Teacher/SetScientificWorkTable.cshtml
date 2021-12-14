@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Teacher panel";
+    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+}
+
+@model Plan.ViewModels.ScientificWorkViewModel
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet">
+
+<link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+<link href="~/css/Style.css" rel="stylesheet">
+<link href="~/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .sizeText {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11pt;
+    }
+
+    .sizeInput {
+        width: 100%;
+    }
+
+    .testbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        padding: 3px;
+    }
+
+    input, select, textarea {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+        input:hover, select:hover, textarea:hover {
+            outline: none;
+            border: 1px solid #095484;
+        }
+
+    input {
+        width: calc(100% - 0px);
+        padding: 5px;
+    }
+
+    .colorBtn {
+        width: 100%;
+        background: #4e73df;
+    }
+
+    .divBarSize {
+        width: 100%;
+        background: #4e73df;
+    }
+
+    .btn-primary {
+        width: 100%;
+        color: var(--button-color);
+        background: #4e73df;
+        border-radius: var(--border-radius);
+        color: #ffffff;
+    }
+
+        .btn-primary:hover {
+            box-shadow: inset 0 0 0 20rem var(--darken-1);
+        }
+
+    .tableSize {
+        table-layout: fixed; /* Фиксированная ширина ячеек */
+        width: 100%; /* Ширина таблицы */
+    }
+
+    .verticalText {
+        display: inline-block;
+        font-size: 15px;
+        writing-mode: vertical-lr;
+        -ms-writing-mode: bt-lr;
+        transform-origin: center;
+        transform: rotate(180deg);
+        padding-top: 2mm;
+        padding-bottom: 3mm;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+</style>
+
+<div class="col-md-6 offset-md-3">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Створення наукової роботи</h6>
+        </div>
+        <div class="card-body">
+            <form method="POST">
+                <div class="input-group width">
+                    <span asp-validation-for="NameScientificWork" class="text-danger"></span>
+                    <input asp-for="NameScientificWork" class="input--style-3" type="text" placeholder="Введіть назву. Кількісну характеристику" name="NameScientificWork">
+                </div>
+                <div class="input-group">
+                    <span asp-validation-for="DateSuccess" class="text-danger"></span>
+                    <input asp-for="DateSuccess" class="input--style-3" type="date" placeholder="Введіть термін виконання" name="DateSuccess">
+                </div>
+
+                <div>
+                    <button class="sizeText colorBtn btn btn-primary" asp-controller="Teacher" asp-action="SetScientificWorkTable" type="submit">Закінчити створення</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="~/vendor/jquery/jquery.min.js"></script>
+<script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="~/js/sb-admin-2.min.js"></script>
+<script src="~/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="~/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="~/js/demo/datatables-demo.js"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -1,0 +1,635 @@
+﻿@{
+    ViewData["Title"] = "Manager panel";
+    Layout = "~/Views/Shared/_ManagerLayout.cshtml";
+}
+
+@model Plan.ViewModels.ListSumControlMeasuresViewModels
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet">
+
+<link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+<link href="~/css/Style.css" rel="stylesheet">
+<link href="~/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .btn-success1 {
+        width: 100%;
+        background-color: lawngreen;
+        color: #ffffff;
+    }
+
+        .btn-success1:hover {
+            width: 100%;
+            background-color: lightslategray;
+        }
+
+    .btn-warning1 {
+        width: 100%;
+        background: #4e73df;
+        color: white;
+    }
+
+        .btn-warning1:hover {
+            width: 100%;
+            background-color: lightslategray;
+        }
+
+    .container1 {
+        display: flex;
+    }
+
+        .container1.space-around {
+            justify-content: space-around;
+        }
+
+    .padin {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    button {
+        border: 0px;
+    }
+
+    .sizeText {
+        /* font-family: Verdana, Arial, Helvetica, sans-serif;*/
+        font-size: 11pt;
+    }
+
+    td {
+        font-size: 11pt;
+    }
+
+    /*.sizeTextSmall {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11pt;
+    }*/
+
+    .colorBtn {
+        background: #4e73df;
+    }
+
+    .btn-primary {
+        width: 100%;
+        color: var(--button-color);
+        background-color: var(--button-background-color);
+        border-radius: var(--border-radius);
+        color: #ffffff;
+    }
+
+        .btn-primary:hover {
+            width: 100%;
+            box-shadow: inset 0 0 0 20rem var(--darken-1);
+        }
+
+    .tableSize {
+        table-layout: fixed; /* Фиксированная ширина ячеек */
+        width: 100%; /* Ширина таблицы */
+    }
+
+    .verticalText {
+        margin-left: -8px;
+        display: inline-block;
+        /* font-family: Verdana, Arial, Helvetica, sans-serif;*/
+        font-size: 14px;
+        writing-mode: vertical-lr;
+        -ms-writing-mode: bt-lr;
+        transform-origin: center;
+        transform: rotate(180deg);
+        padding-top: 2mm;
+        padding-bottom: 3mm;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+</style>
+
+<div class="col-md-6 offset-md-3">
+    <div class="card shadow mb-4">
+        <div class="container1 space-around">
+            <div class="padin">
+                <form asp-controller="Manager" asp-action="Back" method="get">
+                    <input type="hidden" value="@Model.userModel.Id" name="id" />
+                    <button class="btn-warning1">
+                        <span class="btn-text">Повернутися</span>
+                    </button>
+                </form>
+            </div>
+            @if (Model.userModel.Status)
+            {
+                <div class="padin">
+                    <form asp-controller="Manager" asp-action="SetNotCorrectUser" method="get">
+                        <input type="hidden" value="@Model.userModel.Id" name="id" />
+                        <button class="btn-success1">
+                            <span class="btn-gradient">
+                                <i class="fa fa-check"></i>
+                            </span>
+                            <span class="btn-text">Затверджено</span>
+                        </button>
+                    </form>
+                </div>
+            }
+            else
+            {
+                <div class="padin">
+                    <form asp-controller="Manager" asp-action="SetCorrectUser" method="post">
+                        <input type="hidden" value="@Model.userModel.Id" name="id" />
+                        <div>
+                            <button class="btn-warning1">
+                                <span class="btn-gradient">
+                                    <i class="fa fa-warning"></i>
+                                </span>
+                                <span class="btn-text">Затвердити</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            }
+            <div class="padin">
+                <form asp-controller="Manager" asp-action="SetComment" method="get">
+                    <input type="hidden" value="@Model.userModel.Id" name="id" />
+                    <button class="btn-warning1">
+                        <span class="btn-text">Коментарій</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow mb-4">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="tableSize table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid"
+                       aria-describedby="dataTable_info" style="width: 100%;">
+
+                    <tr>
+                        <th colspan="3" rowspan="6">Період</th>
+                        <th colspan="36" rowspan="1">Контрольні заходи (загальнаа кількість)</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Екзамени</th>
+                        <th colspan="4">Заліки</th>
+                        <th colspan="4">Контр. роб.</th>
+                        <th colspan="4">Курсові проекти</th>
+                        <th colspan="4">Курсові роботи</th>
+                        <th colspan="4">РГР, РР, ГР</th>
+                        <th colspan="4">ДКР</th>
+                        <th colspan="4">Реферати</th>
+                        <th colspan="4">Консультації</th>
+                    </tr>
+
+                    <tr>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За бюджет.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За контр.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За бюджет.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За контр.</div></th>
+
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За бюджет.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За контр.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За бюджет.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За контр.</div></th>
+
+
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За бюджет.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За контр.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За бюджет.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За контр.</div></th>
+
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За бюджет.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За контр.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За бюджет.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За контр.</div></th>
+
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За бюджет.</div></th>
+                        <th class="sizeTextSmall" colspan="2"><div class="verticalText">За контр.</div></th>
+                    </tr>
+                    <tr>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">пл</div></th>
+                        <th class="sizeTextSmall" colspan="1"><div class="verticalText">вик</div></th>
+
+                    </tr>
+                    <tbody>
+                        @foreach (var item in Model.listSumControlMeasures)
+                        {
+                            <tr role="row" class="odd">
+                                <td colspan="3">@Model.listNameControlMeasures.Where(d => d.Id == (Model.listSumControlMeasures.IndexOf(item) + 1)).FirstOrDefault().NameColum</td>
+
+                                @if (item.ExamBudPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.ExamBudPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.ExamBudPl</td>
+                                }
+
+                                @if (item.ExamBudVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.ExamBudVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.ExamBudVuc</td>
+                                }
+
+                                @if (item.ExamConPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.ExamConPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.ExamConPl</td>
+                                }
+
+                                @if (item.ExamConVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.ExamConVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.ExamConVuc</td>
+                                }
+
+
+                                @*------------------------------------------------*@
+                                @if (item.TestBudPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.TestBudPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.TestBudPl</td>
+                                }
+
+                                @if (item.TestBudVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.TestBudVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.TestBudVuc</td>
+                                }
+
+                                @if (item.TestConPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.TestConPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.TestConPl</td>
+                                }
+
+                                @if (item.TestConVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.TestConVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.TestConVuc</td>
+                                }
+
+
+
+                                @*------------------------------------------------*@
+                                @if (item.KRBudPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.KRBudPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.KRBudPl</td>
+                                }
+
+                                @if (item.KRBudVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.KRBudVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.KRBudVuc</td>
+                                }
+
+                                @if (item.KRConPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.KRConPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.KRConPl</td>
+                                }
+
+                                @if (item.KRConVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.KRConVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.KRConVuc</td>
+                                }
+
+
+
+                                @*------------------------------------------------*@
+                                @if (item.CursProectBudPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.CursProectBudPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.CursProectBudPl</td>
+                                }
+
+                                @if (item.CosultationBudVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.CosultationBudVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.CosultationBudVuc</td>
+                                }
+
+                                @if (item.CosultationConPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.CosultationConPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.CosultationConPl</td>
+                                }
+
+                                @if (item.CosultationConVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.CosultationConVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.CosultationConVuc</td>
+                                }
+
+
+
+                                @*------------------------------------------------*@
+                                @if (item.CursRobBudPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.CursRobBudPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.CursRobBudPl</td>
+                                }
+
+                                @if (item.CursProectBudVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.CursProectBudVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.CursProectBudVuc</td>
+                                }
+
+                                @if (item.CursProectConPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.CursProectConPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.CursProectConPl</td>
+                                }
+
+                                @if (item.CursProectConVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.CursProectConVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.CursProectConVuc</td>
+                                }
+
+
+                                @*------------------------------------------------*@
+                                @if (item.RGRBudPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.RGRBudPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.RGRBudPl</td>
+                                }
+
+                                @if (item.RGRBudVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.RGRBudVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.RGRBudVuc</td>
+                                }
+
+                                @if (item.RGRConPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.RGRConPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.RGRConPl</td>
+                                }
+
+                                @if (item.RGRConVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.RGRConVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.RGRConVuc</td>
+                                }
+
+
+                                @*------------------------------------------------*@
+                                @if (item.DKRBudPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.DKRBudPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.DKRBudPl</td>
+                                }
+
+                                @if (item.DKRBudVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.DKRBudVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.DKRBudVuc</td>
+                                }
+
+                                @if (item.DKRConPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.DKRConPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.DKRConPl</td>
+                                }
+
+                                @if (item.DKRConVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.DKRConVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.DKRConVuc</td>
+                                }
+
+
+
+                                @*------------------------------------------------*@
+                                @if (item.AbstractBudPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.AbstractBudPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.AbstractBudPl</td>
+                                }
+
+                                @if (item.AbstractBudVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.AbstractBudVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.AbstractBudVuc</td>
+                                }
+
+                                @if (item.AbstractConPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.AbstractConPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.AbstractConPl</td>
+                                }
+
+                                @if (item.AbstractConVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.AbstractConVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.AbstractConVuc</td>
+                                }
+
+
+                                @*------------------------------------------------*@
+                                @if (item.CosultationBudPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.CosultationBudPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.CosultationBudPl</td>
+                                }
+
+                                @if (item.CosultationBudVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.CosultationBudVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.CosultationBudVuc</td>
+                                }
+
+                                @if (item.CosultationConPl > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.CosultationConPl</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.CosultationConPl</td>
+                                }
+
+                                @if (item.CosultationConVuc > 9)
+                                {
+                                    <td colspan="1"><div class="verticalText">@item.CosultationConVuc</div></td>
+                                }
+                                else
+                                {
+                                    <td colspan="1">@item.CosultationConVuc</td>
+                                }
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/vendor/jquery/jquery.min.js"></script>
+<script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="~/js/sb-admin-2.min.js"></script>
+<script src="~/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="~/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="~/js/demo/datatables-demo.js"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

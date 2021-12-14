@@ -1,0 +1,460 @@
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.exe
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.deps.json
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.runtimeconfig.json
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.runtimeconfig.dev.json
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.pdb
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.Views.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.Views.pdb
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Humanizer.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.csprojAssemblyReference.cache
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.AssemblyInfoInputs.cache
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.AssemblyInfo.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.csproj.CoreCompileInputs.cache
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.MvcApplicationPartsAssemblyInfo.cache
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorAssemblyInfo.cache
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorAssemblyInfo.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\staticwebassets\Plan.StaticWebAssets.Manifest.cache
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\staticwebassets\Plan.StaticWebAssets.xml
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\scopedcss\bundle\Plan.styles.css
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.TagHelpers.input.cache
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.TagHelpers.output.cache
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorCoreGenerate.cache
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Account\Registration.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\Index.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ManagerLayout.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TeacherLayout.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ChangesWorkPlanTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\CharacteristicGroupsTable1.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\CharacteristicGroupsTable2.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Complete.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ControlMeasuresSum.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ControlMeasuresTable1.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ControlMeasuresTable2.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\EducationalActivitiesTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Index.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\LectureClassesTable1.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\LectureClassesTable2.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\LectureClassesTableSum.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\MethodicalWorkTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\OrganizationalWorkTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\OtherTypesWorkSemestr2Table.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\OtherTypesWorkTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ScientificWorkTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetChangesWorkPlanTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetCharacteristic1.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetCharacteristic2.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetControlMeasuresTable1.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetControlMeasuresTable2.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetEducationalActivitiesTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetLectureClassesTable1.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetLectureClassesTable2.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetMethodicalWorkTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetOrganizationalWorkTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetOtherTypesWorkSemestr2Table.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetOtherTypesWorkTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetScientificWorkTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\WorkloadSum.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorTargetAssemblyInfo.cache
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorTargetAssemblyInfo.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.Views.pdb
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.csproj.CopyComplete
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.dll
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.pdb
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.genruntimeconfig.cache
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\AllTeacherTable.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\TeacherLayoutForManager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\CharacteristicGroupsTable1Manager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\CharacteristicGroupsTable2Manager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\LectureClassesTable1Manager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\LectureClassesTable2Manager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\LectureClassesTableSumManager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ControlMeasuresTable1Manager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ControlMeasuresTable2Manager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ControlMeasuresSumManager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\OtherTypesWorkTable1Manager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\OtherTypesWorkTable2Manager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\WorkloadSumManager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\MethodicalWorkTableManager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ScientificWorkTableManager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\OrganizationalWorkTableManager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\EducationalActivitiesTableManager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ChangesWorkPlanTableManager.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\_SearchData.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\EASendMail.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\MailKit.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\MimeKit.dll
+D:\Мої роботи\Plan\Plan\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\SetNotCorrectUser.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectCharacteristic1.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SearchData.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectCharacteristic2.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectLectureClasses1.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectLectureClasses2.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectControlMeasures1.cshtml.g.cs
+D:\Мої роботи\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectControlMeasures2.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.exe
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.deps.json
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.runtimeconfig.json
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.runtimeconfig.dev.json
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.pdb
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.Views.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.Views.pdb
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\EASendMail.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Вова\Desktop\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.csprojAssemblyReference.cache
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.AssemblyInfoInputs.cache
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.AssemblyInfo.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.csproj.CoreCompileInputs.cache
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorAssemblyInfo.cache
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorAssemblyInfo.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\staticwebassets\Plan.StaticWebAssets.Manifest.cache
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\staticwebassets\Plan.StaticWebAssets.xml
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\scopedcss\bundle\Plan.styles.css
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.TagHelpers.input.cache
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.TagHelpers.output.cache
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorCoreGenerate.cache
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Account\Registration.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\AllTeacherTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ChangesWorkPlanTableManager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\CharacteristicGroupsTable1Manager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\CharacteristicGroupsTable2Manager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ControlMeasuresSumManager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ControlMeasuresTable1Manager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ControlMeasuresTable2Manager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\EducationalActivitiesTableManager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\Index.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\LectureClassesTable1Manager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\LectureClassesTable2Manager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\LectureClassesTableSumManager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\MethodicalWorkTableManager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\OrganizationalWorkTableManager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\OtherTypesWorkTable1Manager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\OtherTypesWorkTable2Manager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ScientificWorkTableManager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\SetNotCorrectUser.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\TeacherLayoutForManager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\WorkloadSumManager.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\_SearchData.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ManagerLayout.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TeacherLayout.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ChangesWorkPlanTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\CharacteristicGroupsTable1.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\CharacteristicGroupsTable2.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Complete.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ControlMeasuresSum.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ControlMeasuresTable1.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ControlMeasuresTable2.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\EducationalActivitiesTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Index.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\LectureClassesTable1.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\LectureClassesTable2.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\LectureClassesTableSum.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\MethodicalWorkTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectCharacteristic1.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectCharacteristic2.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectControlMeasures1.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectControlMeasures2.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectLectureClasses1.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectLectureClasses2.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\OrganizationalWorkTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\OtherTypesWorkSemestr2Table.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\OtherTypesWorkTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ScientificWorkTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SearchData.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetChangesWorkPlanTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetCharacteristic1.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetCharacteristic2.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetControlMeasuresTable1.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetControlMeasuresTable2.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetEducationalActivitiesTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetLectureClassesTable1.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetLectureClassesTable2.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetMethodicalWorkTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetOrganizationalWorkTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetOtherTypesWorkSemestr2Table.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetOtherTypesWorkTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetScientificWorkTable.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\WorkloadSum.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorTargetAssemblyInfo.cache
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorTargetAssemblyInfo.cs
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.Views.pdb
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.csproj.CopyComplete
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.dll
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.pdb
+C:\Users\Вова\Desktop\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.genruntimeconfig.cache
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.exe
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.deps.json
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.runtimeconfig.json
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.runtimeconfig.dev.json
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.pdb
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.Views.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Plan.Views.pdb
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\EASendMail.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Humanizer.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\MailKit.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\MimeKit.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Мої роботи\Редагований план\Plan\Plan\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.csprojAssemblyReference.cache
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.AssemblyInfoInputs.cache
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.AssemblyInfo.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.csproj.CoreCompileInputs.cache
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.MvcApplicationPartsAssemblyInfo.cache
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorAssemblyInfo.cache
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorAssemblyInfo.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\staticwebassets\Plan.StaticWebAssets.Manifest.cache
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\staticwebassets\Plan.StaticWebAssets.xml
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\scopedcss\bundle\Plan.styles.css
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.TagHelpers.input.cache
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.TagHelpers.output.cache
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorCoreGenerate.cache
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Account\Registration.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\AllTeacherTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ChangesWorkPlanTableManager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\CharacteristicGroupsTable1Manager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\CharacteristicGroupsTable2Manager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ControlMeasuresSumManager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ControlMeasuresTable1Manager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ControlMeasuresTable2Manager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\EducationalActivitiesTableManager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\Index.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\LectureClassesTable1Manager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\LectureClassesTable2Manager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\LectureClassesTableSumManager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\MethodicalWorkTableManager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\OrganizationalWorkTableManager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\OtherTypesWorkTable1Manager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\OtherTypesWorkTable2Manager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ScientificWorkTableManager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\SetNotCorrectUser.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\TeacherLayoutForManager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\WorkloadSumManager.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\_SearchData.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ManagerLayout.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TeacherLayout.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ChangesWorkPlanTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\CharacteristicGroupsTable1.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\CharacteristicGroupsTable2.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Complete.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ControlMeasuresSum.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ControlMeasuresTable1.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ControlMeasuresTable2.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\EducationalActivitiesTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Index.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\LectureClassesTable1.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\LectureClassesTable2.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\LectureClassesTableSum.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\MethodicalWorkTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectCharacteristic1.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectCharacteristic2.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectControlMeasures1.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectControlMeasures2.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectLectureClasses1.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\NameSubjectLectureClasses2.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\OrganizationalWorkTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\OtherTypesWorkSemestr2Table.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\OtherTypesWorkTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\ScientificWorkTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SearchData.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetChangesWorkPlanTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetCharacteristic1.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetCharacteristic2.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetControlMeasuresTable1.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetControlMeasuresTable2.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetEducationalActivitiesTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetLectureClassesTable1.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetLectureClassesTable2.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetMethodicalWorkTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetOrganizationalWorkTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetOtherTypesWorkSemestr2Table.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetOtherTypesWorkTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\SetScientificWorkTable.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\WorkloadSum.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorTargetAssemblyInfo.cache
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.RazorTargetAssemblyInfo.cs
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.Views.pdb
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.csproj.CopyComplete
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.dll
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.pdb
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Plan.genruntimeconfig.cache
+D:\Мої роботи\Редагований план\Plan\Plan\obj\Debug\netcoreapp3.1\Razor\Views\Manager\SetComment.cshtml.g.cs
